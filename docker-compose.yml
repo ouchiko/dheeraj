@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  test-nginx:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - 8081:80
+    volumes:
+      - ./src:/usr/share/nginx/html
+    
+    
+
+
